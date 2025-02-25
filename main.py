@@ -1,6 +1,14 @@
 from enum import Enum
+from graphics import *
 import random
 
+def window():
+    win = GraphWin("Rock, Paper, Scissors", 1000, 500)
+    win.setBackground(color_rgb(198, 205, 215))
+
+window()
+
+#buttons background (color_rgb(213, 217, 224))
 class Shape(Enum):
     ROCK = 'rock'
     PAPER = 'paper'
